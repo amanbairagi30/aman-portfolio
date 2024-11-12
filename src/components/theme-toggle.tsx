@@ -9,7 +9,7 @@ export function SelectTheme() {
   return (
     <>
       <div
-        className={`flex cursor-pointer items-center gap-2 rounded-lg text-center transition-all duration-300`}
+        className={`flex cursor-pointer border-2 !w-10 h-8 items-center bg-gradient-to-t from-accent shadow-lg dark:shadow-primary/30 justify-center gap-2 rounded-lg text-center transition-all duration-300`}
         onClick={() => setTheme(theme === "light" ? "dark" : "light")}
       >
         <SunIcon className="size-4 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />

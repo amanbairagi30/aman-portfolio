@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
+import Script from "next/script";
+import Contacts from "@/components/contacts";
 
 const nsBold = localFont({
   src: "./fonts/neutral_sans_bold.woff2",
@@ -36,6 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+        suppressHydrationWarning={true}
         className={`${manrope.variable} ${nsRegular.variable} ${nsBold.variable} font-primary antialiased`}
       >
         <ThemeProvider
@@ -46,10 +49,17 @@ export default function RootLayout({
         >
           <main className="max-w-4xl mx-auto">
             <section className="px-4">
-              <div className="border-2 h-screen shadow-xl py-8">{children}</div>
+              <div className="border-x-2 min-h-screen max-h-fit py-8">
+                {children}
+              </div>
+              <Contacts />
             </section>
           </main>
         </ThemeProvider>
+        <Script
+          async
+          src="https://custom-web-widget.vercel.app/widget.umd.js"
+        ></Script>
       </body>
     </html>
   );
