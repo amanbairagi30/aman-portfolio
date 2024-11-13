@@ -14,7 +14,7 @@ declare global {
         React.HTMLAttributes<HTMLElement>,
         HTMLElement
       > & {
-        theme: string;
+        theme: string | undefined;
         username: string;
         lgCols?: number;
         cardView?: string;
@@ -66,12 +66,12 @@ export default function ProofofWork() {
         <Heading title="Open source Contributions" />
         <section className="">
           <widget-web-component
-            theme="dark"
+            theme={theme}
             username="amanbairagi30"
             lg-cols={2}
             md-cols={2}
             base-cols={1}
-            card-view="list"
+            card-view="grid"
             font-variable="--font-manrope"
             top-visible="true"
           />

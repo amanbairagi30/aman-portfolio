@@ -1,15 +1,7 @@
 import React from "react";
 import { SelectTheme } from "./theme-toggle";
-import SocailMedia from "./socail-media";
 import CurrentWork from "./current-work";
-import { UserAvatar } from "./user-avatar";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import Image from "next/image";
-import { GithubGraph } from "./ui/github";
-import { GithubIcon } from "@/app/icons/icon";
-import Link from "next/link";
 import { Button } from "./ui/button";
-import { SquareChartGantt } from "lucide-react";
 
 export default function Top() {
   return (
@@ -32,7 +24,7 @@ export default function Top() {
             <Button
               // Icon={SquareChartGantt}
               // iconPlacement="right"
-              className="h-8 font-semibold"
+              className="h-8 shadow-xl shadow-primary/40 dark:shadow-primary/40 font-semibold"
             >
               Projects
             </Button>

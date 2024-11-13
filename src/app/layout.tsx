@@ -38,7 +38,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        suppressHydrationWarning={true}
         className={`${manrope.variable} ${nsRegular.variable} ${nsBold.variable} font-primary antialiased`}
       >
         <ThemeProvider
@@ -48,7 +47,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <main className="max-w-4xl mx-auto">
-            <section className="px-4">
+            <section className="md:px-4">
               <div className="border-x-2 min-h-screen max-h-fit py-8">
                 {children}
               </div>
