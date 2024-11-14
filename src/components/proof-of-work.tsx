@@ -8,6 +8,7 @@ import Heading from "./heading";
 import { useTheme } from "next-themes";
 
 declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace JSX {
     interface IntrinsicElements {
       "widget-web-component": React.DetailedHTMLProps<

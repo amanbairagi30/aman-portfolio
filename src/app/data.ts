@@ -4,7 +4,7 @@ export const projectData = [
   {
     name: "Merged&Share",
     users: "180",
-    visitors: "2300+",
+    visitors: "2300",
     skills: ["NextJs", "Typescript", "Prisma", "PostgreSQL"],
     image: mergedAndShare,
     bgColor: "yellow-500",
