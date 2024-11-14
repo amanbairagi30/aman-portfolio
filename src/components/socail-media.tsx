@@ -1,4 +1,6 @@
-import { GithubIcon, LinkedIcon, XIcon } from "@/app/icons/icon";
+import GithubIcon from "@/components/icons/github";
+import LinkedInIcon from "@/components/icons/linkedin";
+import XIcon from "@/components/icons/x";
 import { FileUser, Mail } from "lucide-react";
 import Link from "next/link";
 import React from "react";
@@ -20,7 +22,7 @@ export default function SocailMedia() {
           href={"https://www.linkedin.com/in/aman-kumar-bairagi-9315b3242/"}
           target="_blank"
         >
-          <LinkedIcon />
+          <LinkedInIcon />
         </Link>
         <Link href={"mailto:amanbairagi1089@gmail.com"} target="_blank">
           <Mail />

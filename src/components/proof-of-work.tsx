@@ -1,33 +1,11 @@
 "use client";
-import { GithubIcon } from "@/app/icons/icon";
+import GithubIcon from "@/components/icons/github";
 import Link from "next/link";
 import React from "react";
 import { GithubGraph } from "./ui/github";
 import { ProjectCarousel } from "./projects-carousel";
 import Heading from "./heading";
 import { useTheme } from "next-themes";
-
-declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace JSX {
-    interface IntrinsicElements {
-      "widget-web-component": React.DetailedHTMLProps<
-        React.HTMLAttributes<HTMLElement>,
-        HTMLElement
-      > & {
-        theme: string | undefined;
-        username: string;
-        lgCols?: number;
-        cardView?: string;
-        fontVariable?: string;
-        mdCols?: number;
-        baseCols?: number;
-        //   cardBorder = false,
-        topStatusBarVisible?: boolean;
-      };
-    }
-  }
-}
 
 export default function ProofofWork() {
   const { theme } = useTheme();
@@ -72,7 +50,7 @@ export default function ProofofWork() {
             lg-cols={2}
             md-cols={2}
             base-cols={1}
-            card-view="grid"
+            card-view="list"
             font-variable="--font-manrope"
             top-visible="true"
           />

@@ -12,7 +12,7 @@ import { Badge } from "./ui/badge";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { SquareArrowOutUpRight } from "lucide-react";
-import { GithubIcon } from "@/app/icons/icon";
+import GithubIcon from "@/components/icons/github";
 import { projectData } from "@/app/data";
 
 export function ProjectCarousel() {
