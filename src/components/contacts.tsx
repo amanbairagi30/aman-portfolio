@@ -1,6 +1,5 @@
 import React from "react";
 import SocailMedia from "./socail-media";
-import Image from "next/image";
 import { logo } from "@/app/constants/image";
 
 export default function Contacts() {
