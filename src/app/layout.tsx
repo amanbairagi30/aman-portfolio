@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Script from "next/script";
 import Contacts from "@/components/contacts";
+import { Analytics } from "@vercel/analytics/react";
 
 const nsBold = localFont({
   src: "./fonts/neutral_sans_bold.woff2",
@@ -68,6 +69,7 @@ export default function RootLayout({
             </section>
           </main>
         </ThemeProvider>
+        <Analytics />
         <Script
           async
           src="https://custom-web-widget.vercel.app/widget.umd.js"
