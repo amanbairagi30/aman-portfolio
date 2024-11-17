@@ -17,11 +17,11 @@ export const projectData = [
     name: "Chronomint",
     users: "",
     visitors: "",
-    skills: ["NextJs", "Typescript", "TailwindCSS"],
+    skills: ["NextJs", "Typescript", "TailwindCSS", "Frontend"],
     image: chronomint,
     bgColor: "purple-500",
     description:
-      "A tool for swapping NFTs into tokens like USDC, USDT, and SOL.",
+      "A tool for swapping NFTs into tokens like USDC, USDT, and SOL. Worked on Frontend Only",
     liveLink: "https://mergedandshare.in/",
     githubLink: "https://github.com/TanmayArchives/ChronoMint",
   },

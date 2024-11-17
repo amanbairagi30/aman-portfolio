@@ -6,7 +6,10 @@ import { logo } from "@/app/constants/image";
 export default function Contacts() {
   return (
     <>
-      <div className="border-2 relative text-center px-8 overflow-hidden pt-10 pb-12 flex flex-col items-center gap-2 justify-center">
+      <div
+        id="contact"
+        className="border-x-2 border-t-2 relative text-center px-8 overflow-hidden pt-10 pb-12 flex flex-col items-center gap-2 justify-center"
+      >
         <div>
           <SocailMedia />
         </div>
@@ -17,7 +20,7 @@ export default function Contacts() {
           Designed and Developed by Aman Kumar Bairagi
         </p>
         <Image
-          className="w-4 opacity-10 absolute bottom-4 object-cover"
+          className="w-4 absolute bottom-4 object-cover"
           width={400}
           height={400}
           src={logo}
