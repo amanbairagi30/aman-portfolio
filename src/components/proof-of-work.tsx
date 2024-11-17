@@ -1,14 +1,20 @@
 "use client";
 import GithubIcon from "@/components/icons/github";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GithubGraph } from "./ui/github";
 import { ProjectCarousel } from "./projects-carousel";
 import Heading from "./heading";
 import Skills from "./skills";
 
 export default function ProofofWork() {
-  const localTheme = localStorage.getItem("theme");
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    const localTheme = localStorage.getItem("theme");
+    setTheme(localTheme || "light");
+  }, []);
+
   return (
     <>
       <section className="flex flex-col gap-8 my-8 justify-center mt-16">
@@ -23,7 +29,7 @@ export default function ProofofWork() {
             username="amanbairagi30"
             blockMargin={3}
             colorPallete={[
-              localTheme === "dark" ? "#202020" : "#f4f4f4",
+              theme === "dark" ? "#202020" : "#f4f4f4",
               "#9be9a8",
               "#40c463",
               "#30a14e",
@@ -47,7 +53,7 @@ export default function ProofofWork() {
         <Heading title="Open source Contributions" />
         <section className="">
           <widget-web-component
-            theme={localTheme}
+            theme={theme}
             username="amanbairagi30"
             lg-cols={2}
             md-cols={2}
