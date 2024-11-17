@@ -19,11 +19,11 @@ export default function Contacts() {
         <p className="text-sm text-foreground/60">
           Designed and Developed by Aman Kumar Bairagi
         </p>
-        <Image
+        <img
           className="w-4 absolute bottom-4 object-cover"
           width={400}
           height={400}
-          src={logo}
+          src={logo.src}
           alt="merged-and-share"
         />
       </div>
