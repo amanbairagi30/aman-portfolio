@@ -26,7 +26,7 @@ export const projectData = [
     image: pinbot,
     bgColor: "purple-500",
     description:
-      "A tool for swapping NFTs into tokens like USDC, USDT, and SOL. Worked on Frontend Only",
+      "A Discord bot that lets you chat with pinned messages using context from pins.",
     liveLink: "https://www.youtube.com/watch?v=4TLyhzNAz5A",
     githubLink: "https://github.com/amanbairagi30/PinBot",
   },
