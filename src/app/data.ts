@@ -1,4 +1,9 @@
-import { chronomint, invoiceGen, mergedAndShare } from "./constants/image";
+import {
+  chronomint,
+  invoiceGen,
+  mergedAndShare,
+  pinbot,
+} from "./constants/image";
 
 export const projectData = [
   {
@@ -14,6 +19,18 @@ export const projectData = [
     githubLink: "https://github.com/amanbairagi30/merged-n-share",
   },
   {
+    name: "PinBot",
+    users: "",
+    visitors: "",
+    skills: ["NodeJs", "Typescript", "Discord.js", "RAG", "Pinecone"],
+    image: pinbot,
+    bgColor: "purple-500",
+    description:
+      "A tool for swapping NFTs into tokens like USDC, USDT, and SOL. Worked on Frontend Only",
+    liveLink: "https://www.youtube.com/watch?v=4TLyhzNAz5A",
+    githubLink: "https://github.com/amanbairagi30/PinBot",
+  },
+  {
     name: "Chronomint",
     users: "",
     visitors: "",
@@ -22,7 +39,7 @@ export const projectData = [
     bgColor: "purple-500",
     description:
       "A tool for swapping NFTs into tokens like USDC, USDT, and SOL. Worked on Frontend Only",
-    liveLink: "https://mergedandshare.in/",
+    liveLink: "https://chrono-mint.vercel.app/",
     githubLink: "https://github.com/TanmayArchives/ChronoMint",
   },
   {

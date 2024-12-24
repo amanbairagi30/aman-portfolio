@@ -17,7 +17,7 @@ export default function WorkExperience() {
               <p className="text-sm text-foreground/60">
                 Frontend Developer Intern
               </p>
-              <p className="text-sm text-foreground/60">June 2024 - Present</p>
+              <p className="text-sm text-foreground/60">June 2024 - Nov 2024</p>
             </div>
           </div>
         </article>

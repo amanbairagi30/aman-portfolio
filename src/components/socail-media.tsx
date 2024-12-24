@@ -9,7 +9,7 @@ export default function SocailMedia() {
   return (
     <>
       <aside className="flex py-2 items-center gap-4">
-        <a href={"/aman_bairagi_resume.pdf"} target="_blank">
+        <a href={"/aman_kumar_bairagi_resume.pdf"} target="_blank">
           <FileUser />
         </a>
         <Link href={"https://x.com/AMANBAIRAGI_30"} target="_blank">

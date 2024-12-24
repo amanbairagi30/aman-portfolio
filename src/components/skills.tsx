@@ -13,17 +13,19 @@ export default function Skills() {
             "NextJs",
             "ReactJs",
             "TS/JS",
-            "TailwindCSS",
-            "MongoDB",
-            "NodeJs/ExpressJs",
-            "PostgreSQL",
-            "Prisma",
             "Hono",
+            "PostgreSQL",
+            "MongoDB",
+            "Prisma",
+            "TailwindCSS",
+            "Docker",
+            "NodeJs/ExpressJs",
+            "WebSockets",
             "Git/Github",
           ].map((item, index) => (
             <Badge
               key={index}
-              className="h-10 bg-accent text-foreground rounded-md px-4"
+              className="h-10 bg-accent text-sm text-foreground rounded-md px-4"
             >
               {item}
             </Badge>
