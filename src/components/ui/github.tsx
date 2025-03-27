@@ -1,7 +1,7 @@
 "use client";
 import { useCallback, useEffect, useState } from "react";
 
-import Calendar, { Activity, ActivityCalendar } from "react-activity-calendar";
+import { Activity, ActivityCalendar } from "react-activity-calendar";
 
 type GithubGraphProps = {
   username: string;
@@ -22,7 +22,7 @@ export const GithubGraph = ({
       const contributions = await fetchContributionData(username);
       setContribution(contributions);
     } catch (error) {
-      throw Error("Error fetching contribution data");
+      throw Error("Error fetching contribution data" + error);
     } finally {
       setIsLoading(false);
     }
@@ -58,8 +58,8 @@ export const GithubGraph = ({
   );
 };
 async function fetchContributionData(username: string): Promise<Activity[]> {
-  let response = await fetch(`https://github.vineet.pro/api/${username}`);
-  let responseBody = await response.json();
+  const response = await fetch(`https://github.vineet.pro/api/${username}`);
+  const responseBody = await response.json();
 
   if (!response.ok) {
     throw Error("Erroring fetching contribution data");
